@@ -46,7 +46,7 @@ jobs:
       - name: Build Docker image
         run: |
           docker build \
-            -t ${{ secrets.DOCKER_USERNAME }}/order-microservice-app:${IMAGE_TAG} . \ 
+            -t ${{ secrets.DOCKER_USERNAME }}/order-microservice-app:${IMAGE_TAG} .
             
 
       # 7. Push Docker image
