@@ -52,4 +52,4 @@ jobs:
       # 7. Push Docker image
       - name: Push Docker image
         run: |
-          docker push ${{ secrets.DOCKER_USERNAME }}/order-microservice-app:${IMAGE_TAG} .
+          docker push ${{ secrets.DOCKER_USERNAME }}/order-microservice-app:${IMAGE_TAG}
