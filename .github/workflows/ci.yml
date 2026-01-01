@@ -9,7 +9,7 @@ on:
       - main
 
 jobs:
-  build-and-push:
+  build-and-push-docker-image:
     runs-on: ubuntu-latest
 
     steps:
@@ -46,10 +46,10 @@ jobs:
       - name: Build Docker image
         run: |
           docker build \
-            -t ${{ secrets.DOCKER_USERNAME }}/order-microservice-app:${IMAGE_TAG} \ 
+            -t ${{ secrets.DOCKER_USERNAME }}/order-microservice-app:${IMAGE_TAG} . \ 
             .
 
       # 7. Push Docker image
       - name: Push Docker image
         run: |
-          docker push ${{ secrets.DOCKER_USERNAME }}/order-microservice-app:${IMAGE_TAG}
+          docker push ${{ secrets.DOCKER_USERNAME }}/order-microservice-app:${IMAGE_TAG} .
