@@ -1,8 +1,8 @@
-# Order-Microservice
+# Order-Microservice application
 
 
 A **Spring Boot microservice** that provides RESTful endpoints for managing orders.  
-This project demonstrates a platform-ready service with **OpenAPI documentation**, **Swagger UI**, and standard Spring Boot architecture.
+This project demonstrates a platform-ready service with **OpenAPI documentation**, **Swagger UI**, and standard Spring Boot architecture. 
 
 ---
 
