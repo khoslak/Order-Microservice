@@ -73,7 +73,7 @@ jobs:
         run: |
           cd gitops/apps/order-microservice/overlays/dev
           kustomize edit set image \
-            order-microservice-app:${IMAGE_TAG}
+            ${{ secrets.DOCKER_USERNAME }}/order-microservice-app:${IMAGE_TAG}
 
       # 11. Commit and push GitOps change
       - name: Commit and push GitOps change
